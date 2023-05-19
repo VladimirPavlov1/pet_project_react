@@ -1,0 +1,33 @@
+@import-normalize; /* bring in normalize.css styles */
+
+:root {
+  --background-color:#FEF9F9;
+  --background_btn-color:#CCE4FB;
+  --color-white: #ffffff;
+  --color-black: #111111;
+  --color-yellow:#FFC107;
+  --color-blue: #54ADFF;
+  --color-gradient_blue:#419EF1;
+  --color-light_blue:#CCE4FB;
+  --color-green: #00C3AD;
+  --color-red: #F43F5E;
+  --color-grey:#888888;
+  --color-gradient_red:#FF8356;
+  --color-gradient_yellow:#FFC107;
+  
+  --text-color-primary: #000000;
+  --text-color-blue: #54ADFF;
+  --text-color-white:#FEF9F9;
+}
+
+body {
+  margin: 0;
+  font-family:'Manrope',sans-serif;
+  font-weight: 500;
+ 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
