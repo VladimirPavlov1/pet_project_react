@@ -9,19 +9,22 @@ const OurFriendsPage = lazy(() => import('../pages/OurFriendsPage/OurFriendsPage
 const LoginPage = lazy(() => import('../pages/LoginPage/LoginPage'));
 const RegisterPage = lazy(() => import('../pages/RegisterPage/RegisterPage'));
 const UserPage = lazy(() => import('../pages/UserPage/UserPage'));
+const ErrorPage = lazy(()=>import('./ErrorPage/ErrorPage'))
 
 export const App = () => {
   return (
       
     <Routes>
       <Route path="/" element={<SharedLayout />}>
-        <Route path="main" element={<MainPage />}/>
+        <Route index element={<MainPage />}/>
         <Route path="news" element={<NewsPage />}/>
-        <Route path="notices" element={<NoticesPage />}/>
+        <Route path="notices/:categoryName" element={<NoticesPage />}/>
          <Route path="friends" element={<OurFriendsPage />}/>
         <Route path="login" element={<LoginPage />}/>
         <Route path="register" element={<RegisterPage />}/>
-        <Route path="user" element={<UserPage />}/>       
+        <Route path="user" element={<UserPage />}/>
+        <Route path="*" element={<ErrorPage />} />
+
 
       </Route>
     </Routes>
