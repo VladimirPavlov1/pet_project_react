@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/202.26a132e0.chunk.js","mappings":"sJAMA,UANoB,WAChB,OACI,kBAEP,C","sources":["pages/NoticesPage/NoticesPage.jsx"],"sourcesContent":["const NoticesPage = () => {\n    return (\n        <div></div>\n    );\n}\n\nexport default NoticesPage;"],"names":[],"sourceRoot":""}
